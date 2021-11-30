@@ -1,14 +1,10 @@
 name: AtomicDex-Desktop CI
 
 on:
-  pull_request:
-    types: [ opened, synchronize, reopened ]
   push:
     branches:
       - master
       - dev
-  schedule:
-    - cron: '0 0 * * 1'
 
 env:
   DEX_PROJECT_NAME: "atomicdex-desktop"
